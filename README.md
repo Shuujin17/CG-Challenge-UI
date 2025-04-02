@@ -1,32 +1,32 @@
 # CG-Challenge-UI
 
-Proyecto de interfaz de usuario desarrollado con Vue.js y Vite
+User interface project developed with Vue.js and Vite
 
-## Estructura del Proyecto
+## Project Structure
 
-- `src/components`: Contiene todos los componentes Vue.js del proyecto
-- `src/assets/img`: Directorio para imágenes y recursos multimedia
-- `src/assets/scss`: Archivos SCSS para estilos personalizados
-- `src/App.vue`: Componente principal de la aplicación
+- `src/components`: Contains all Vue.js components of the project
+- `src/assets/img`: Directory for images and multimedia resources
+- `src/assets/scss`: SCSS files for custom styles
+- `src/App.vue`: Main application component
 
-## Instalación y Configuración
+## Installation and Setup
 
-Clonar el repositorio```bash
+Clone the repository```bash
 git clone https://github.com/Shuujin17/CG-Challenge-UI
 ```
 
-Acceder al directorio del proyecto```bash
+Access the project directory```bash
 cd CG-Challenge-UI
 ```
 
-Instalar las dependencias```bash
+Install dependencies```bash
 npm install
 ```
 
-Iniciar el servidor de desarrollo```bash
+Start the development server```bash
 npm run dev
 ```
 
-## URL del Servidor de Desarrollo
+## Development Server URL
 
-- El proyecto estará disponible en: [http://localhost:5173](http://localhost:5173)
+- The project will be available at: [http://localhost:5173](http://localhost:5173)
