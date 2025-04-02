@@ -1,0 +1,203 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.footer {
+    background-color: $color-dark;
+    padding: 2rem 0 1rem;
+}
+
+.background-footer {
+    background-color: #343444;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1rem !important;
+    padding: 0 1rem;
+    padding-bottom: 20px;
+}
+
+.payment-methods {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+}
+.payment-icon {
+    width: 80px;
+    height: auto;
+    background-color: #1e1f2e;
+    border-radius: $border-radius-sm;
+
+    &.crypto {
+        max-width: 25px;
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+
+.more-text {
+    color: $color-gray;
+    font-size: 0.9rem;
+    margin-left: 100px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    @include flex-center;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover {
+        background-color: $color-primary;
+    }
+
+    &.facebook {
+        background-color: #3b5998;
+    }
+
+    &.instagram {
+        background-color: #C13584;
+    }
+
+    &.twitter {
+        background-color: #1DA1F2;
+    }
+
+    &.discord {
+        background-color: #7289DA;
+    }
+}
+
+.social-icon {
+    color: $color-white;
+    font-size: 1.2rem;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include respond-to('medium') {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+.footer-brand {
+    text-align: center;
+
+    @include respond-to('medium') {
+        text-align: left;
+    }
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: $font-weight-bold;
+        color: $color-white;
+    }
+}
+
+.footer-contact {
+    color: $color-gray;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+    margin-bottom: 1rem;
+}
+
+.footer-menu {
+    li {
+        margin-bottom: 0.5rem;
+
+        a {
+            color: $color-gray;
+            font-size: 0.9rem;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.footer-reviews {
+    text-align: center;
+
+    @include respond-to('medium') {
+        text-align: right;
+    }
+}
+
+.trustpilot {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    .trustpilot-star {
+        max-width: 46%;
+        color: #00B67A;
+        font-size: 1.5rem;
+    }
+
+    @include respond-to('medium') {
+        align-items: flex-end;
+    }
+}
+
+.review-text {
+    color: $color-gray;
+    font-size: 0.9rem;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    p {
+        color: $color-gray;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.pagination-pages {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-button {
+  @include button-reset;
+  width: 36px;
+  height: 36px;
+  @include flex-center;
+  margin: 0 0.25rem;
+  border-radius: $border-radius-sm;
+  background-color: $color-dark-secondary;
+  color: $color-white;
+  font-size: 0.9rem;
+  
+  &.active {
+    background-color: $color-primary;
+  }
+  
+  &:hover:not(.active):not(:disabled) {
+    background-color: lighten($color-dark-secondary, 10%);
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  &.prev, &.next {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.pagination-ellipsis {
+  margin: 0 0.25rem;
+  color: $color-white;
+}
